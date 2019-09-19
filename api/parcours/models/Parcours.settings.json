@@ -1,0 +1,26 @@
+{
+  "connection": "default",
+  "collectionName": "parcours",
+  "info": {
+    "name": "parcours",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "pois": {
+      "collection": "poi",
+      "dominant": true,
+      "via": "parcours"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

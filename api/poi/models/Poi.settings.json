@@ -1,0 +1,34 @@
+{
+  "connection": "default",
+  "collectionName": "pois",
+  "info": {
+    "name": "poi",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "namepoi": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "media": {
+      "type": "json"
+    },
+    "position": {
+      "type": "json"
+    },
+    "parcours": {
+      "collection": "parcours",
+      "via": "pois"
+    },
+    "isvisited": {
+      "type": "boolean"
+    }
+  }
+}

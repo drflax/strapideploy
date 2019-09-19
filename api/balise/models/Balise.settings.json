@@ -1,0 +1,28 @@
+{
+  "connection": "default",
+  "collectionName": "balises",
+  "info": {
+    "name": "balise",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "namebalise": {
+      "type": "string"
+    },
+    "position": {
+      "type": "json"
+    },
+    "iscaptured": {
+      "type": "boolean"
+    },
+    "game": {
+      "model": "game",
+      "via": "balises"
+    }
+  }
+}

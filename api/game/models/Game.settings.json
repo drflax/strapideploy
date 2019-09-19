@@ -1,0 +1,38 @@
+{
+  "connection": "default",
+  "collectionName": "games",
+  "info": {
+    "name": "game",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "user": {
+      "model": "user",
+      "plugin": "users-permissions"
+    },
+    "users": {
+      "collection": "user",
+      "via": "games",
+      "dominant": true,
+      "plugin": "users-permissions"
+    },
+    "duration": {
+      "type": "integer"
+    },
+    "expirationgame": {
+      "type": "date"
+    },
+    "balises": {
+      "collection": "balise",
+      "via": "game"
+    },
+    "classement": {
+      "type": "json"
+    }
+  }
+}
